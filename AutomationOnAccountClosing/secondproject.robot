@@ -36,8 +36,7 @@ ${checkUnsatisfactory}    //input[@name='unsatisfactory-service' and @disabled]
 ${checkOtherReasons}    //input[@name='other-reasons' and @disabled]
 
 # Check Reason Page
-${selectionError}    //p[@class='dc-text closing-account-reasons__error']
-${inputError}    //p[@class='dc-text closing-account-reasons__error']
+${closingAccountError}    //p[@class='dc-text closing-account-reasons__error']
 ${backButton}    //div[@class='closing-account-reasons__footer']//button[@class='dc-btn dc-btn__effect dc-btn--secondary dc-btn__large']
 ${continueButton}    //div[@class='closing-account-reasons__footer']//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large']
 ${inputFieldOtherTradingPlatform}    //textarea[@name='other_trading_platforms']
@@ -106,7 +105,7 @@ Verify Close My Account Page
         Wait Until Page Contains Element    //input[@name='${reason}' and @value='true']//parent::label
         Checkbox Should Be Selected    //input[@name='${reason}']
         Click Element    //input[@name='${reason}']//parent::label 
-        Element Should Be Visible    ${selectionError}
+        Element Should Be Visible    ${closingAccountError}
         Wait Until Page Contains Element    //input[@name='${reason}' and @value='false']//parent::label
         Checkbox Should Not Be Selected    //input[@name='${reason}']
     END
@@ -114,10 +113,10 @@ Verify Close My Account Page
 Verify Reason Is Required
     Wait Until Element Is Enabled    ${pageContentOverlay}    60
     Click Element    ${checkFinancialPriorities}
-    Element Should Not Be Visible    ${selectionError}
+    Element Should Not Be Visible    ${closingAccountError}
     Element Should Be Enabled    ${continueButton}
     Click Element    ${checkFinancialPriorities}
-    Element Should Be Visible    ${selectionError}
+    Element Should Be Visible    ${closingAccountError}
 
 Check The Reasons
     Click Element    ${checkFinancialPriorities}
@@ -132,14 +131,15 @@ Check The Reasons
     Element Should Be Enabled    ${continueButton}
 
 Verify Input Field Types & Character Length
-    Element Should Not Be Visible    ${inputError}
+    # Verify Symbol Is Not Allowed
+    Element Should Not Be Visible    ${closingAccountError}
     Click Element    ${inputFieldOtherTradingPlatform}
-    Input Text    ${inputFieldOtherTradingPlatform}    sdflsa;jldkjfa;lksdjf
+    Input Text    ${inputFieldOtherTradingPlatform}    @sdflsa;jldkjfa;lksdjf1234
     Element Should Be Disabled    ${continueButton}
-    Element Should Be Visible    ${inputError}
+    Element Should Be Visible    ${closingAccountError}
     Click Element    ${inputFieldOtherTradingPlatform}
     Clear Input Field    ${inputFieldOtherTradingPlatform}
-
+    
     Click Element    ${inputFieldOtherTradingPlatform}
     Input Text    ${inputFieldOtherTradingPlatform}    There is some other platform have more features. There is some other platform have more features.
     Click Element    ${inputFieldDoToImprove}
@@ -160,27 +160,27 @@ Typing Text In Input Field
     Input Text    ${inputFieldDoToImprove}    Usability can be improve maybe. Just a dummy sentence.
     Element Should Not Contain    ${inputFieldDoToImprove}    What could we do to improve?
 
-Continue To Close Account
-    Click Element    ${continueButton}
-    Wait Until Page Contains Element    ${closeAccountPrompt}    60
-    Wait Until Element Is Visible    ${closeAccountPrompt}    60
-    Wait Until Element Is Visible    ${returnButton}    60
-    Wait Until Element Is Visible    ${closeAccountButton}    60
+# Continue To Close Account
+#     Click Element    ${continueButton}
+#     Wait Until Page Contains Element    ${closeAccountPrompt}    60
+#     Wait Until Element Is Visible    ${closeAccountPrompt}    60
+#     Wait Until Element Is Visible    ${returnButton}    60
+#     Wait Until Element Is Visible    ${closeAccountButton}    60
 
-    Click Element    ${returnButton}
-    Wait Until Element Is Enabled    ${pageContentOverlay}    60
+#     Click Element    ${returnButton}
+#     Wait Until Element Is Enabled    ${pageContentOverlay}    60
 
-    Click Element    ${continueButton}
-    Wait Until Page Contains Element    ${closeAccountPrompt}    60
-    Wait Until Element Is Visible    ${closeAccountPrompt}
-    Wait Until Element Is Visible    ${returnButton}
-    Wait Until Element Is Visible    ${closeAccountButton}
-    Click Element    ${closeAccountButton}
+#     Click Element    ${continueButton}
+#     Wait Until Page Contains Element    ${closeAccountPrompt}    60
+#     Wait Until Element Is Visible    ${closeAccountPrompt}
+#     Wait Until Element Is Visible    ${returnButton}
+#     Wait Until Element Is Visible    ${closeAccountButton}
+#     Click Element    ${closeAccountButton}
 
-Verify Close Account
-    Wait Until Page Contains Element    ${closeAccountMessage}    60
-    Wait Until Element Is Visible    ${closeAccountMessage}    60
-    Sleep    20
+# Verify Close Account
+#     Wait Until Page Contains Element    ${closeAccountMessage}    60
+#     Wait Until Element Is Visible    ${closeAccountMessage}    60
+#     Sleep    20
 
-Verify Final Location
-    Location Should Be    ${HomeURL}
+# Verify Final Location
+#     Location Should Be    ${HomeURL}

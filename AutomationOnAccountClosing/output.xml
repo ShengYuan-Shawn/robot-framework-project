@@ -1,211 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220923 16:32:52.269" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220925 05:31:16.250" rpa="false" schemaversion="3">
 <suite id="s1" name="Secondproject" source="/home/lim/qa_finalproject/AutomationOnAccountClosing/secondproject.robot">
-<test id="s1-t1" name="Login To Deriv App" line="60">
+<test id="s1-t1" name="Login To Deriv App" line="59">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${AppURL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220923 16:32:52.351" level="INFO">Opening browser 'Chrome' to base url 'https://app.deriv.com/account/closing-account'.</msg>
-<status status="PASS" starttime="20220923 16:32:52.350" endtime="20220923 16:32:56.378"/>
+<msg timestamp="20220925 05:31:16.353" level="INFO">Opening browser 'Chrome' to base url 'https://app.deriv.com/account/closing-account'.</msg>
+<status status="PASS" starttime="20220925 05:31:16.353" endtime="20220925 05:31:22.164"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220923 16:32:56.378" endtime="20220923 16:32:56.484"/>
+<status status="PASS" starttime="20220925 05:31:22.164" endtime="20220925 05:31:22.267"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 16:32:57.485" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220923 16:32:56.485" endtime="20220923 16:32:57.486"/>
+<msg timestamp="20220925 05:31:23.268" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220925 05:31:22.268" endtime="20220925 05:31:23.268"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${inputEmail}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:32:57.486" endtime="20220923 16:32:59.451"/>
+<status status="PASS" starttime="20220925 05:31:23.269" endtime="20220925 05:31:23.290"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${inputEmail}</arg>
 <arg>sheng.yuan@besquare.com.my</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 16:32:59.451" level="INFO">Typing text 'sheng.yuan@besquare.com.my' into text field '//input[@type='email']'.</msg>
-<status status="PASS" starttime="20220923 16:32:59.451" endtime="20220923 16:32:59.509"/>
+<msg timestamp="20220925 05:31:23.291" level="INFO">Typing text 'sheng.yuan@besquare.com.my' into text field '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20220925 05:31:23.291" endtime="20220925 05:31:23.346"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${inputPassword}</arg>
 <arg>Lsy@1103</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 16:32:59.510" level="INFO">Typing text 'Lsy@1103' into text field '//input[@type='password']'.</msg>
-<status status="PASS" starttime="20220923 16:32:59.510" endtime="20220923 16:32:59.563"/>
+<msg timestamp="20220925 05:31:23.346" level="INFO">Typing text 'Lsy@1103' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220925 05:31:23.346" endtime="20220925 05:31:23.397"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${submitButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:32:59.564" level="INFO">Clicking element '//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20220923 16:32:59.564" endtime="20220923 16:33:01.961"/>
+<msg timestamp="20220925 05:31:23.398" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220925 05:31:23.398" endtime="20220925 05:31:26.862"/>
 </kw>
-<status status="PASS" starttime="20220923 16:32:52.350" endtime="20220923 16:33:01.961"/>
+<status status="PASS" starttime="20220925 05:31:16.353" endtime="20220925 05:31:26.864"/>
 </test>
-<test id="s1-t2" name="Wait Settings Page To Load" line="69">
+<test id="s1-t2" name="Wait Settings Page To Load" line="68">
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <arg>${accountLoader}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:01.963" endtime="20220923 16:33:01.991"/>
+<status status="PASS" starttime="20220925 05:31:26.866" endtime="20220925 05:31:27.937"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${pageOverlay}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:01.991" endtime="20220923 16:33:16.472"/>
+<status status="PASS" starttime="20220925 05:31:27.937" endtime="20220925 05:31:27.945"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:01.962" endtime="20220923 16:33:16.472"/>
+<status status="PASS" starttime="20220925 05:31:26.865" endtime="20220925 05:31:27.946"/>
 </test>
-<test id="s1-t3" name="Check Confirmation Page" line="73">
+<test id="s1-t3" name="Check Confirmation Page" line="72">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${pageContentOverlay}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:16.475" endtime="20220923 16:33:16.489"/>
+<status status="PASS" starttime="20220925 05:31:27.946" endtime="20220925 05:31:27.955"/>
 </kw>
 <kw name="Page Should Contain Link" library="SeleniumLibrary">
 <arg>${tncDocuments}</arg>
 <doc>Verifies link identified by ``locator`` is found from current page.</doc>
-<msg timestamp="20220923 16:33:16.504" level="INFO">Current page contains link '//a[@class='link']'.</msg>
-<status status="PASS" starttime="20220923 16:33:16.490" endtime="20220923 16:33:16.504"/>
+<msg timestamp="20220925 05:31:27.965" level="INFO">Current page contains link '//a[@class='link']'.</msg>
+<status status="PASS" starttime="20220925 05:31:27.955" endtime="20220925 05:31:27.966"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${cancelButton}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:16.504" endtime="20220923 16:33:16.525"/>
+<status status="PASS" starttime="20220925 05:31:27.966" endtime="20220925 05:31:27.985"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${cancelButton}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220923 16:33:16.526" endtime="20220923 16:33:16.549"/>
+<status status="PASS" starttime="20220925 05:31:27.986" endtime="20220925 05:31:28.006"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${closeMyAccountButton}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:16.549" endtime="20220923 16:33:16.569"/>
+<status status="PASS" starttime="20220925 05:31:28.006" endtime="20220925 05:31:28.024"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${closeMyAccountButton}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220923 16:33:16.569" endtime="20220923 16:33:16.594"/>
+<status status="PASS" starttime="20220925 05:31:28.024" endtime="20220925 05:31:28.043"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${closeMyAccountButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:16.595" level="INFO">Clicking element '//button[@class='dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account']'.</msg>
-<status status="PASS" starttime="20220923 16:33:16.595" endtime="20220923 16:33:16.650"/>
+<msg timestamp="20220925 05:31:28.044" level="INFO">Clicking element '//button[@class='dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account']'.</msg>
+<status status="PASS" starttime="20220925 05:31:28.043" endtime="20220925 05:31:28.108"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:16.474" endtime="20220923 16:33:16.650"/>
+<status status="PASS" starttime="20220925 05:31:27.946" endtime="20220925 05:31:28.108"/>
 </test>
-<test id="s1-t4" name="Back To Confirmation Page" line="82">
+<test id="s1-t4" name="Back To Confirmation Page" line="81">
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <arg>${accountLoader}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:16.651" endtime="20220923 16:33:18.780"/>
+<status status="PASS" starttime="20220925 05:31:28.110" endtime="20220925 05:31:28.129"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${pageContentOverlay}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:18.781" endtime="20220923 16:33:18.793"/>
+<status status="PASS" starttime="20220925 05:31:28.129" endtime="20220925 05:31:28.135"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${pageContentOverlay}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:18.794" endtime="20220923 16:33:18.814"/>
+<status status="PASS" starttime="20220925 05:31:28.135" endtime="20220925 05:31:28.146"/>
 </kw>
 <kw name="Element Should Be Enabled" library="SeleniumLibrary">
 <arg>${backButton}</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220923 16:33:18.814" endtime="20220923 16:33:18.846"/>
+<status status="PASS" starttime="20220925 05:31:28.146" endtime="20220925 05:31:28.180"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${backButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:18.847" level="INFO">Clicking element '//div[@class='closing-account-reasons__footer']//button[@class='dc-btn dc-btn__effect dc-btn--secondary dc-btn__large']'.</msg>
-<status status="PASS" starttime="20220923 16:33:18.846" endtime="20220923 16:33:18.907"/>
+<msg timestamp="20220925 05:31:28.180" level="INFO">Clicking element '//div[@class='closing-account-reasons__footer']//button[@class='dc-btn dc-btn__effect dc-btn--secondary dc-btn__large']'.</msg>
+<status status="PASS" starttime="20220925 05:31:28.180" endtime="20220925 05:31:28.242"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:16.650" endtime="20220923 16:33:18.908"/>
+<status status="PASS" starttime="20220925 05:31:28.109" endtime="20220925 05:31:28.242"/>
 </test>
-<test id="s1-t5" name="Go To Close My Account Page" line="89">
+<test id="s1-t5" name="Go To Close My Account Page" line="88">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${pageContentOverlay}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:18.910" endtime="20220923 16:33:18.927"/>
+<status status="PASS" starttime="20220925 05:31:28.243" endtime="20220925 05:31:28.253"/>
 </kw>
 <kw name="Page Should Contain Link" library="SeleniumLibrary">
 <arg>${tncDocuments}</arg>
 <doc>Verifies link identified by ``locator`` is found from current page.</doc>
-<msg timestamp="20220923 16:33:18.936" level="INFO">Current page contains link '//a[@class='link']'.</msg>
-<status status="PASS" starttime="20220923 16:33:18.927" endtime="20220923 16:33:18.937"/>
+<msg timestamp="20220925 05:31:28.261" level="INFO">Current page contains link '//a[@class='link']'.</msg>
+<status status="PASS" starttime="20220925 05:31:28.253" endtime="20220925 05:31:28.261"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${cancelButton}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:18.937" endtime="20220923 16:33:18.964"/>
+<status status="PASS" starttime="20220925 05:31:28.261" endtime="20220925 05:31:28.272"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${cancelButton}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220923 16:33:18.965" endtime="20220923 16:33:18.981"/>
+<status status="PASS" starttime="20220925 05:31:28.272" endtime="20220925 05:31:28.288"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${closeMyAccountButton}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:18.981" endtime="20220923 16:33:18.993"/>
+<status status="PASS" starttime="20220925 05:31:28.289" endtime="20220925 05:31:28.310"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${closeMyAccountButton}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220923 16:33:18.993" endtime="20220923 16:33:19.014"/>
+<status status="PASS" starttime="20220925 05:31:28.310" endtime="20220925 05:31:28.326"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${closeMyAccountButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.015" level="INFO">Clicking element '//button[@class='dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account']'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.015" endtime="20220923 16:33:19.055"/>
+<msg timestamp="20220925 05:31:28.327" level="INFO">Clicking element '//button[@class='dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account']'.</msg>
+<status status="PASS" starttime="20220925 05:31:28.327" endtime="20220925 05:31:28.387"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:18.909" endtime="20220923 16:33:19.055"/>
+<status status="PASS" starttime="20220925 05:31:28.243" endtime="20220925 05:31:28.387"/>
 </test>
-<test id="s1-t6" name="Verify Close My Account Page" line="98">
+<test id="s1-t6" name="Verify Close My Account Page" line="97">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${pageContentOverlay}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.056" endtime="20220923 16:33:19.064"/>
+<status status="PASS" starttime="20220925 05:31:28.388" endtime="20220925 05:31:28.396"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${pageContentOverlay}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:19.064" endtime="20220923 16:33:19.075"/>
+<status status="PASS" starttime="20220925 05:31:28.396" endtime="20220925 05:31:28.408"/>
 </kw>
 <kw name="Element Should Be Enabled" library="SeleniumLibrary">
 <arg>${backButton}</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220923 16:33:19.075" endtime="20220923 16:33:19.099"/>
+<status status="PASS" starttime="20220925 05:31:28.408" endtime="20220925 05:31:28.426"/>
 </kw>
 <kw name="Element Should Be Disabled" library="SeleniumLibrary">
 <arg>${continueButton}</arg>
 <doc>Verifies that element identified by ``locator`` is disabled.</doc>
-<status status="PASS" starttime="20220923 16:33:19.099" endtime="20220923 16:33:19.119"/>
+<status status="PASS" starttime="20220925 05:31:28.426" endtime="20220925 05:31:28.441"/>
 </kw>
 <for flavor="IN">
 <var>${reason}</var>
@@ -215,531 +215,531 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.120" level="INFO">Clicking element '//input[@name='financial-priorities']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.119" endtime="20220923 16:33:19.188"/>
+<msg timestamp="20220925 05:31:28.442" level="INFO">Clicking element '//input[@name='financial-priorities']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:28.442" endtime="20220925 05:31:28.495"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='true']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.189" endtime="20220923 16:33:19.201"/>
+<status status="PASS" starttime="20220925 05:31:28.495" endtime="20220925 05:31:28.514"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220923 16:33:19.201" level="INFO">Verifying checkbox '//input[@name='financial-priorities']' is selected.</msg>
-<status status="PASS" starttime="20220923 16:33:19.201" endtime="20220923 16:33:19.233"/>
+<msg timestamp="20220925 05:31:28.514" level="INFO">Verifying checkbox '//input[@name='financial-priorities']' is selected.</msg>
+<status status="PASS" starttime="20220925 05:31:28.514" endtime="20220925 05:31:28.542"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.234" level="INFO">Clicking element '//input[@name='financial-priorities']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.234" endtime="20220923 16:33:19.272"/>
+<msg timestamp="20220925 05:31:28.543" level="INFO">Clicking element '//input[@name='financial-priorities']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:28.542" endtime="20220925 05:31:28.580"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${selectionError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220923 16:33:19.289" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
-<status status="PASS" starttime="20220923 16:33:19.272" endtime="20220923 16:33:19.289"/>
+<msg timestamp="20220925 05:31:28.602" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
+<status status="PASS" starttime="20220925 05:31:28.581" endtime="20220925 05:31:28.603"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='false']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.290" endtime="20220923 16:33:19.304"/>
+<status status="PASS" starttime="20220925 05:31:28.603" endtime="20220925 05:31:28.618"/>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<msg timestamp="20220923 16:33:19.305" level="INFO">Verifying checkbox '//input[@name='financial-priorities']' is not selected.</msg>
-<status status="PASS" starttime="20220923 16:33:19.304" endtime="20220923 16:33:19.321"/>
+<msg timestamp="20220925 05:31:28.619" level="INFO">Verifying checkbox '//input[@name='financial-priorities']' is not selected.</msg>
+<status status="PASS" starttime="20220925 05:31:28.618" endtime="20220925 05:31:28.653"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:19.119" endtime="20220923 16:33:19.321"/>
+<status status="PASS" starttime="20220925 05:31:28.442" endtime="20220925 05:31:28.653"/>
 </iter>
 <iter>
 <var name="${reason}">stop-trading</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.322" level="INFO">Clicking element '//input[@name='stop-trading']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.321" endtime="20220923 16:33:19.358"/>
+<msg timestamp="20220925 05:31:28.654" level="INFO">Clicking element '//input[@name='stop-trading']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:28.653" endtime="20220925 05:31:28.729"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='true']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.358" endtime="20220923 16:33:19.367"/>
+<status status="PASS" starttime="20220925 05:31:28.729" endtime="20220925 05:31:28.739"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220923 16:33:19.368" level="INFO">Verifying checkbox '//input[@name='stop-trading']' is selected.</msg>
-<status status="PASS" starttime="20220923 16:33:19.368" endtime="20220923 16:33:19.389"/>
+<msg timestamp="20220925 05:31:28.740" level="INFO">Verifying checkbox '//input[@name='stop-trading']' is selected.</msg>
+<status status="PASS" starttime="20220925 05:31:28.739" endtime="20220925 05:31:28.782"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.390" level="INFO">Clicking element '//input[@name='stop-trading']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.389" endtime="20220923 16:33:19.425"/>
+<msg timestamp="20220925 05:31:28.783" level="INFO">Clicking element '//input[@name='stop-trading']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:28.782" endtime="20220925 05:31:28.823"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${selectionError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220923 16:33:19.440" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
-<status status="PASS" starttime="20220923 16:33:19.425" endtime="20220923 16:33:19.440"/>
+<msg timestamp="20220925 05:31:28.845" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
+<status status="PASS" starttime="20220925 05:31:28.823" endtime="20220925 05:31:28.845"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='false']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.440" endtime="20220923 16:33:19.450"/>
+<status status="PASS" starttime="20220925 05:31:28.845" endtime="20220925 05:31:28.868"/>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<msg timestamp="20220923 16:33:19.450" level="INFO">Verifying checkbox '//input[@name='stop-trading']' is not selected.</msg>
-<status status="PASS" starttime="20220923 16:33:19.450" endtime="20220923 16:33:19.465"/>
+<msg timestamp="20220925 05:31:28.869" level="INFO">Verifying checkbox '//input[@name='stop-trading']' is not selected.</msg>
+<status status="PASS" starttime="20220925 05:31:28.868" endtime="20220925 05:31:28.907"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:19.321" endtime="20220923 16:33:19.465"/>
+<status status="PASS" starttime="20220925 05:31:28.653" endtime="20220925 05:31:28.907"/>
 </iter>
 <iter>
 <var name="${reason}">not-interested</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.465" level="INFO">Clicking element '//input[@name='not-interested']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.465" endtime="20220923 16:33:19.499"/>
+<msg timestamp="20220925 05:31:28.907" level="INFO">Clicking element '//input[@name='not-interested']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:28.907" endtime="20220925 05:31:28.959"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='true']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.499" endtime="20220923 16:33:19.507"/>
+<status status="PASS" starttime="20220925 05:31:28.959" endtime="20220925 05:31:28.971"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220923 16:33:19.508" level="INFO">Verifying checkbox '//input[@name='not-interested']' is selected.</msg>
-<status status="PASS" starttime="20220923 16:33:19.507" endtime="20220923 16:33:19.535"/>
+<msg timestamp="20220925 05:31:28.971" level="INFO">Verifying checkbox '//input[@name='not-interested']' is selected.</msg>
+<status status="PASS" starttime="20220925 05:31:28.971" endtime="20220925 05:31:29.001"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.536" level="INFO">Clicking element '//input[@name='not-interested']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.535" endtime="20220923 16:33:19.565"/>
+<msg timestamp="20220925 05:31:29.002" level="INFO">Clicking element '//input[@name='not-interested']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:29.001" endtime="20220925 05:31:29.046"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${selectionError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220923 16:33:19.580" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
-<status status="PASS" starttime="20220923 16:33:19.565" endtime="20220923 16:33:19.580"/>
+<msg timestamp="20220925 05:31:29.064" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
+<status status="PASS" starttime="20220925 05:31:29.046" endtime="20220925 05:31:29.064"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='false']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.580" endtime="20220923 16:33:19.589"/>
+<status status="PASS" starttime="20220925 05:31:29.065" endtime="20220925 05:31:29.090"/>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<msg timestamp="20220923 16:33:19.590" level="INFO">Verifying checkbox '//input[@name='not-interested']' is not selected.</msg>
-<status status="PASS" starttime="20220923 16:33:19.590" endtime="20220923 16:33:19.604"/>
+<msg timestamp="20220925 05:31:29.090" level="INFO">Verifying checkbox '//input[@name='not-interested']' is not selected.</msg>
+<status status="PASS" starttime="20220925 05:31:29.090" endtime="20220925 05:31:29.113"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:19.465" endtime="20220923 16:33:19.604"/>
+<status status="PASS" starttime="20220925 05:31:28.907" endtime="20220925 05:31:29.113"/>
 </iter>
 <iter>
 <var name="${reason}">another-website</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.604" level="INFO">Clicking element '//input[@name='another-website']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.604" endtime="20220923 16:33:19.642"/>
+<msg timestamp="20220925 05:31:29.114" level="INFO">Clicking element '//input[@name='another-website']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:29.113" endtime="20220925 05:31:29.153"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='true']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.643" endtime="20220923 16:33:19.653"/>
+<status status="PASS" starttime="20220925 05:31:29.153" endtime="20220925 05:31:29.165"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220923 16:33:19.653" level="INFO">Verifying checkbox '//input[@name='another-website']' is selected.</msg>
-<status status="PASS" starttime="20220923 16:33:19.653" endtime="20220923 16:33:19.675"/>
+<msg timestamp="20220925 05:31:29.165" level="INFO">Verifying checkbox '//input[@name='another-website']' is selected.</msg>
+<status status="PASS" starttime="20220925 05:31:29.165" endtime="20220925 05:31:29.195"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.675" level="INFO">Clicking element '//input[@name='another-website']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.675" endtime="20220923 16:33:19.702"/>
+<msg timestamp="20220925 05:31:29.196" level="INFO">Clicking element '//input[@name='another-website']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:29.195" endtime="20220925 05:31:29.233"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${selectionError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220923 16:33:19.717" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
-<status status="PASS" starttime="20220923 16:33:19.702" endtime="20220923 16:33:19.717"/>
+<msg timestamp="20220925 05:31:29.247" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
+<status status="PASS" starttime="20220925 05:31:29.233" endtime="20220925 05:31:29.247"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='false']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.717" endtime="20220923 16:33:19.725"/>
+<status status="PASS" starttime="20220925 05:31:29.247" endtime="20220925 05:31:29.257"/>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<msg timestamp="20220923 16:33:19.725" level="INFO">Verifying checkbox '//input[@name='another-website']' is not selected.</msg>
-<status status="PASS" starttime="20220923 16:33:19.725" endtime="20220923 16:33:19.742"/>
+<msg timestamp="20220925 05:31:29.258" level="INFO">Verifying checkbox '//input[@name='another-website']' is not selected.</msg>
+<status status="PASS" starttime="20220925 05:31:29.257" endtime="20220925 05:31:29.279"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:19.604" endtime="20220923 16:33:19.742"/>
+<status status="PASS" starttime="20220925 05:31:29.113" endtime="20220925 05:31:29.279"/>
 </iter>
 <iter>
 <var name="${reason}">not-user-friendly</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.743" level="INFO">Clicking element '//input[@name='not-user-friendly']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.743" endtime="20220923 16:33:19.776"/>
+<msg timestamp="20220925 05:31:29.280" level="INFO">Clicking element '//input[@name='not-user-friendly']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:29.280" endtime="20220925 05:31:29.318"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='true']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.777" endtime="20220923 16:33:19.788"/>
+<status status="PASS" starttime="20220925 05:31:29.318" endtime="20220925 05:31:29.331"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220923 16:33:19.789" level="INFO">Verifying checkbox '//input[@name='not-user-friendly']' is selected.</msg>
-<status status="PASS" starttime="20220923 16:33:19.789" endtime="20220923 16:33:19.814"/>
+<msg timestamp="20220925 05:31:29.332" level="INFO">Verifying checkbox '//input[@name='not-user-friendly']' is selected.</msg>
+<status status="PASS" starttime="20220925 05:31:29.331" endtime="20220925 05:31:29.365"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.815" level="INFO">Clicking element '//input[@name='not-user-friendly']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.814" endtime="20220923 16:33:19.839"/>
+<msg timestamp="20220925 05:31:29.365" level="INFO">Clicking element '//input[@name='not-user-friendly']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:29.365" endtime="20220925 05:31:29.397"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${selectionError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220923 16:33:19.855" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
-<status status="PASS" starttime="20220923 16:33:19.840" endtime="20220923 16:33:19.855"/>
+<msg timestamp="20220925 05:31:29.413" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
+<status status="PASS" starttime="20220925 05:31:29.397" endtime="20220925 05:31:29.413"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='false']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.856" endtime="20220923 16:33:19.863"/>
+<status status="PASS" starttime="20220925 05:31:29.413" endtime="20220925 05:31:29.427"/>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<msg timestamp="20220923 16:33:19.864" level="INFO">Verifying checkbox '//input[@name='not-user-friendly']' is not selected.</msg>
-<status status="PASS" starttime="20220923 16:33:19.863" endtime="20220923 16:33:19.877"/>
+<msg timestamp="20220925 05:31:29.427" level="INFO">Verifying checkbox '//input[@name='not-user-friendly']' is not selected.</msg>
+<status status="PASS" starttime="20220925 05:31:29.427" endtime="20220925 05:31:29.453"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:19.742" endtime="20220923 16:33:19.877"/>
+<status status="PASS" starttime="20220925 05:31:29.279" endtime="20220925 05:31:29.453"/>
 </iter>
 <iter>
 <var name="${reason}">difficult-transactions</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.877" level="INFO">Clicking element '//input[@name='difficult-transactions']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.877" endtime="20220923 16:33:19.910"/>
+<msg timestamp="20220925 05:31:29.454" level="INFO">Clicking element '//input[@name='difficult-transactions']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:29.453" endtime="20220925 05:31:29.489"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='true']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.910" endtime="20220923 16:33:19.921"/>
+<status status="PASS" starttime="20220925 05:31:29.489" endtime="20220925 05:31:29.500"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220923 16:33:19.921" level="INFO">Verifying checkbox '//input[@name='difficult-transactions']' is selected.</msg>
-<status status="PASS" starttime="20220923 16:33:19.921" endtime="20220923 16:33:19.944"/>
+<msg timestamp="20220925 05:31:29.500" level="INFO">Verifying checkbox '//input[@name='difficult-transactions']' is selected.</msg>
+<status status="PASS" starttime="20220925 05:31:29.500" endtime="20220925 05:31:29.529"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:19.944" level="INFO">Clicking element '//input[@name='difficult-transactions']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:19.944" endtime="20220923 16:33:19.970"/>
+<msg timestamp="20220925 05:31:29.530" level="INFO">Clicking element '//input[@name='difficult-transactions']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:29.529" endtime="20220925 05:31:29.573"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${selectionError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220923 16:33:19.987" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
-<status status="PASS" starttime="20220923 16:33:19.970" endtime="20220923 16:33:19.987"/>
+<msg timestamp="20220925 05:31:29.589" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
+<status status="PASS" starttime="20220925 05:31:29.573" endtime="20220925 05:31:29.589"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='false']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:19.987" endtime="20220923 16:33:19.995"/>
+<status status="PASS" starttime="20220925 05:31:29.590" endtime="20220925 05:31:29.601"/>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<msg timestamp="20220923 16:33:19.996" level="INFO">Verifying checkbox '//input[@name='difficult-transactions']' is not selected.</msg>
-<status status="PASS" starttime="20220923 16:33:19.995" endtime="20220923 16:33:20.009"/>
+<msg timestamp="20220925 05:31:29.602" level="INFO">Verifying checkbox '//input[@name='difficult-transactions']' is not selected.</msg>
+<status status="PASS" starttime="20220925 05:31:29.602" endtime="20220925 05:31:29.620"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:19.877" endtime="20220923 16:33:20.009"/>
+<status status="PASS" starttime="20220925 05:31:29.453" endtime="20220925 05:31:29.620"/>
 </iter>
 <iter>
 <var name="${reason}">lack-of-features</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.009" level="INFO">Clicking element '//input[@name='lack-of-features']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.009" endtime="20220923 16:33:20.045"/>
+<msg timestamp="20220925 05:31:29.621" level="INFO">Clicking element '//input[@name='lack-of-features']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:29.620" endtime="20220925 05:31:29.682"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='true']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:20.045" endtime="20220923 16:33:20.053"/>
+<status status="PASS" starttime="20220925 05:31:29.682" endtime="20220925 05:31:29.700"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220923 16:33:20.053" level="INFO">Verifying checkbox '//input[@name='lack-of-features']' is selected.</msg>
-<status status="PASS" starttime="20220923 16:33:20.053" endtime="20220923 16:33:20.076"/>
+<msg timestamp="20220925 05:31:29.701" level="INFO">Verifying checkbox '//input[@name='lack-of-features']' is selected.</msg>
+<status status="PASS" starttime="20220925 05:31:29.701" endtime="20220925 05:31:29.736"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.076" level="INFO">Clicking element '//input[@name='lack-of-features']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.076" endtime="20220923 16:33:20.102"/>
+<msg timestamp="20220925 05:31:29.736" level="INFO">Clicking element '//input[@name='lack-of-features']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:29.736" endtime="20220925 05:31:29.769"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${selectionError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220923 16:33:20.115" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
-<status status="PASS" starttime="20220923 16:33:20.102" endtime="20220923 16:33:20.115"/>
+<msg timestamp="20220925 05:31:29.785" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
+<status status="PASS" starttime="20220925 05:31:29.769" endtime="20220925 05:31:29.785"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='false']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:20.115" endtime="20220923 16:33:20.124"/>
+<status status="PASS" starttime="20220925 05:31:29.785" endtime="20220925 05:31:29.797"/>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<msg timestamp="20220923 16:33:20.125" level="INFO">Verifying checkbox '//input[@name='lack-of-features']' is not selected.</msg>
-<status status="PASS" starttime="20220923 16:33:20.124" endtime="20220923 16:33:20.140"/>
+<msg timestamp="20220925 05:31:29.798" level="INFO">Verifying checkbox '//input[@name='lack-of-features']' is not selected.</msg>
+<status status="PASS" starttime="20220925 05:31:29.798" endtime="20220925 05:31:29.822"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:20.009" endtime="20220923 16:33:20.140"/>
+<status status="PASS" starttime="20220925 05:31:29.620" endtime="20220925 05:31:29.822"/>
 </iter>
 <iter>
 <var name="${reason}">unsatisfactory-service</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.141" level="INFO">Clicking element '//input[@name='unsatisfactory-service']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.140" endtime="20220923 16:33:20.173"/>
+<msg timestamp="20220925 05:31:29.823" level="INFO">Clicking element '//input[@name='unsatisfactory-service']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:29.822" endtime="20220925 05:31:29.874"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='true']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:20.173" endtime="20220923 16:33:20.182"/>
+<status status="PASS" starttime="20220925 05:31:29.874" endtime="20220925 05:31:29.883"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220923 16:33:20.182" level="INFO">Verifying checkbox '//input[@name='unsatisfactory-service']' is selected.</msg>
-<status status="PASS" starttime="20220923 16:33:20.182" endtime="20220923 16:33:20.206"/>
+<msg timestamp="20220925 05:31:29.884" level="INFO">Verifying checkbox '//input[@name='unsatisfactory-service']' is selected.</msg>
+<status status="PASS" starttime="20220925 05:31:29.883" endtime="20220925 05:31:29.918"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.206" level="INFO">Clicking element '//input[@name='unsatisfactory-service']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.206" endtime="20220923 16:33:20.232"/>
+<msg timestamp="20220925 05:31:29.919" level="INFO">Clicking element '//input[@name='unsatisfactory-service']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:29.919" endtime="20220925 05:31:29.951"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${selectionError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220923 16:33:20.246" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
-<status status="PASS" starttime="20220923 16:33:20.232" endtime="20220923 16:33:20.246"/>
+<msg timestamp="20220925 05:31:29.967" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
+<status status="PASS" starttime="20220925 05:31:29.952" endtime="20220925 05:31:29.967"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='false']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:20.246" endtime="20220923 16:33:20.255"/>
+<status status="PASS" starttime="20220925 05:31:29.967" endtime="20220925 05:31:29.984"/>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<msg timestamp="20220923 16:33:20.256" level="INFO">Verifying checkbox '//input[@name='unsatisfactory-service']' is not selected.</msg>
-<status status="PASS" starttime="20220923 16:33:20.255" endtime="20220923 16:33:20.270"/>
+<msg timestamp="20220925 05:31:29.984" level="INFO">Verifying checkbox '//input[@name='unsatisfactory-service']' is not selected.</msg>
+<status status="PASS" starttime="20220925 05:31:29.984" endtime="20220925 05:31:30.011"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:20.140" endtime="20220923 16:33:20.270"/>
+<status status="PASS" starttime="20220925 05:31:29.822" endtime="20220925 05:31:30.011"/>
 </iter>
 <iter>
 <var name="${reason}">other-reasons</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.271" level="INFO">Clicking element '//input[@name='other-reasons']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.271" endtime="20220923 16:33:20.303"/>
+<msg timestamp="20220925 05:31:30.012" level="INFO">Clicking element '//input[@name='other-reasons']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:30.011" endtime="20220925 05:31:30.049"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='true']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:20.303" endtime="20220923 16:33:20.311"/>
+<status status="PASS" starttime="20220925 05:31:30.049" endtime="20220925 05:31:30.062"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20220923 16:33:20.312" level="INFO">Verifying checkbox '//input[@name='other-reasons']' is selected.</msg>
-<status status="PASS" starttime="20220923 16:33:20.311" endtime="20220923 16:33:20.334"/>
+<msg timestamp="20220925 05:31:30.063" level="INFO">Verifying checkbox '//input[@name='other-reasons']' is selected.</msg>
+<status status="PASS" starttime="20220925 05:31:30.062" endtime="20220925 05:31:30.108"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']//parent::label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.335" level="INFO">Clicking element '//input[@name='other-reasons']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.334" endtime="20220923 16:33:20.361"/>
+<msg timestamp="20220925 05:31:30.109" level="INFO">Clicking element '//input[@name='other-reasons']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:30.108" endtime="20220925 05:31:30.146"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${selectionError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220923 16:33:20.374" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
-<status status="PASS" starttime="20220923 16:33:20.362" endtime="20220923 16:33:20.374"/>
+<msg timestamp="20220925 05:31:30.161" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
+<status status="PASS" starttime="20220925 05:31:30.146" endtime="20220925 05:31:30.162"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@name='${reason}' and @value='false']//parent::label</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:20.375" endtime="20220923 16:33:20.382"/>
+<status status="PASS" starttime="20220925 05:31:30.162" endtime="20220925 05:31:30.172"/>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <arg>//input[@name='${reason}']</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<msg timestamp="20220923 16:33:20.383" level="INFO">Verifying checkbox '//input[@name='other-reasons']' is not selected.</msg>
-<status status="PASS" starttime="20220923 16:33:20.382" endtime="20220923 16:33:20.397"/>
+<msg timestamp="20220925 05:31:30.172" level="INFO">Verifying checkbox '//input[@name='other-reasons']' is not selected.</msg>
+<status status="PASS" starttime="20220925 05:31:30.172" endtime="20220925 05:31:30.191"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:20.271" endtime="20220923 16:33:20.397"/>
+<status status="PASS" starttime="20220925 05:31:30.011" endtime="20220925 05:31:30.191"/>
 </iter>
-<status status="PASS" starttime="20220923 16:33:19.119" endtime="20220923 16:33:20.397"/>
+<status status="PASS" starttime="20220925 05:31:28.441" endtime="20220925 05:31:30.192"/>
 </for>
-<status status="PASS" starttime="20220923 16:33:19.056" endtime="20220923 16:33:20.397"/>
+<status status="PASS" starttime="20220925 05:31:28.388" endtime="20220925 05:31:30.192"/>
 </test>
-<test id="s1-t7" name="Verify Reason Is Required" line="114">
+<test id="s1-t7" name="Verify Reason Is Required" line="113">
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${pageContentOverlay}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220923 16:33:20.398" endtime="20220923 16:33:20.418"/>
+<status status="PASS" starttime="20220925 05:31:30.193" endtime="20220925 05:31:30.221"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${checkFinancialPriorities}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.419" level="INFO">Clicking element '//input[@name='financial-priorities']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.418" endtime="20220923 16:33:20.464"/>
+<msg timestamp="20220925 05:31:30.222" level="INFO">Clicking element '//input[@name='financial-priorities']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:30.221" endtime="20220925 05:31:30.275"/>
 </kw>
 <kw name="Element Should Not Be Visible" library="SeleniumLibrary">
-<arg>${selectionError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20220923 16:33:20.472" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' did not exist.</msg>
-<status status="PASS" starttime="20220923 16:33:20.465" endtime="20220923 16:33:20.472"/>
+<msg timestamp="20220925 05:31:30.282" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' did not exist.</msg>
+<status status="PASS" starttime="20220925 05:31:30.275" endtime="20220925 05:31:30.282"/>
 </kw>
 <kw name="Element Should Be Enabled" library="SeleniumLibrary">
 <arg>${continueButton}</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220923 16:33:20.472" endtime="20220923 16:33:20.493"/>
+<status status="PASS" starttime="20220925 05:31:30.283" endtime="20220925 05:31:30.308"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${checkFinancialPriorities}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.493" level="INFO">Clicking element '//input[@name='financial-priorities']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.493" endtime="20220923 16:33:20.531"/>
+<msg timestamp="20220925 05:31:30.308" level="INFO">Clicking element '//input[@name='financial-priorities']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:30.308" endtime="20220925 05:31:30.356"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${selectionError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220923 16:33:20.553" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
-<status status="PASS" starttime="20220923 16:33:20.531" endtime="20220923 16:33:20.553"/>
+<msg timestamp="20220925 05:31:30.377" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
+<status status="PASS" starttime="20220925 05:31:30.356" endtime="20220925 05:31:30.377"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:20.398" endtime="20220923 16:33:20.554"/>
+<status status="PASS" starttime="20220925 05:31:30.192" endtime="20220925 05:31:30.377"/>
 </test>
-<test id="s1-t8" name="Check The Reasons" line="122">
+<test id="s1-t8" name="Check The Reasons" line="121">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${checkFinancialPriorities}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.555" level="INFO">Clicking element '//input[@name='financial-priorities']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.554" endtime="20220923 16:33:20.587"/>
+<msg timestamp="20220925 05:31:30.379" level="INFO">Clicking element '//input[@name='financial-priorities']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:30.378" endtime="20220925 05:31:30.433"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${checkNotInterested}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.590" level="INFO">Clicking element '//input[@name='not-interested']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.590" endtime="20220923 16:33:20.633"/>
+<msg timestamp="20220925 05:31:30.435" level="INFO">Clicking element '//input[@name='not-interested']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:30.434" endtime="20220925 05:31:30.478"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${checkStopTrading}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.634" level="INFO">Clicking element '//input[@name='stop-trading']//parent::label'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.633" endtime="20220923 16:33:20.714"/>
+<msg timestamp="20220925 05:31:30.478" level="INFO">Clicking element '//input[@name='stop-trading']//parent::label'.</msg>
+<status status="PASS" starttime="20220925 05:31:30.478" endtime="20220925 05:31:30.547"/>
 </kw>
 <kw name="Element Should Be Disabled" library="SeleniumLibrary">
 <arg>${checkAnotherWebsite}</arg>
 <doc>Verifies that element identified by ``locator`` is disabled.</doc>
-<status status="PASS" starttime="20220923 16:33:20.715" endtime="20220923 16:33:20.741"/>
+<status status="PASS" starttime="20220925 05:31:30.548" endtime="20220925 05:31:30.592"/>
 </kw>
 <kw name="Element Should Be Disabled" library="SeleniumLibrary">
 <arg>${checkNotUserFriendly}</arg>
 <doc>Verifies that element identified by ``locator`` is disabled.</doc>
-<status status="PASS" starttime="20220923 16:33:20.741" endtime="20220923 16:33:20.767"/>
+<status status="PASS" starttime="20220925 05:31:30.592" endtime="20220925 05:31:30.623"/>
 </kw>
 <kw name="Element Should Be Disabled" library="SeleniumLibrary">
 <arg>${checkLackFeatures}</arg>
 <doc>Verifies that element identified by ``locator`` is disabled.</doc>
-<status status="PASS" starttime="20220923 16:33:20.768" endtime="20220923 16:33:20.792"/>
+<status status="PASS" starttime="20220925 05:31:30.624" endtime="20220925 05:31:30.647"/>
 </kw>
 <kw name="Element Should Be Disabled" library="SeleniumLibrary">
 <arg>${checkUnsatisfactory}</arg>
 <doc>Verifies that element identified by ``locator`` is disabled.</doc>
-<status status="PASS" starttime="20220923 16:33:20.792" endtime="20220923 16:33:20.814"/>
+<status status="PASS" starttime="20220925 05:31:30.648" endtime="20220925 05:31:30.685"/>
 </kw>
 <kw name="Element Should Be Disabled" library="SeleniumLibrary">
 <arg>${checkAnotherWebsite}</arg>
 <doc>Verifies that element identified by ``locator`` is disabled.</doc>
-<status status="PASS" starttime="20220923 16:33:20.814" endtime="20220923 16:33:20.826"/>
+<status status="PASS" starttime="20220925 05:31:30.686" endtime="20220925 05:31:30.702"/>
 </kw>
 <kw name="Element Should Be Disabled" library="SeleniumLibrary">
 <arg>${checkOtherReasons}</arg>
 <doc>Verifies that element identified by ``locator`` is disabled.</doc>
-<status status="PASS" starttime="20220923 16:33:20.826" endtime="20220923 16:33:20.842"/>
+<status status="PASS" starttime="20220925 05:31:30.702" endtime="20220925 05:31:30.735"/>
 </kw>
 <kw name="Element Should Be Enabled" library="SeleniumLibrary">
 <arg>${continueButton}</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220923 16:33:20.842" endtime="20220923 16:33:20.861"/>
+<status status="PASS" starttime="20220925 05:31:30.736" endtime="20220925 05:31:30.761"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:20.554" endtime="20220923 16:33:20.862"/>
+<status status="PASS" starttime="20220925 05:31:30.377" endtime="20220925 05:31:30.762"/>
 </test>
-<test id="s1-t9" name="Verify Input Field Types &amp; Character Length" line="134">
+<test id="s1-t9" name="Verify Input Field Types &amp; Character Length" line="133">
 <kw name="Element Should Not Be Visible" library="SeleniumLibrary">
-<arg>${inputError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20220923 16:33:20.868" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' did not exist.</msg>
-<status status="PASS" starttime="20220923 16:33:20.862" endtime="20220923 16:33:20.868"/>
+<msg timestamp="20220925 05:31:30.770" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' did not exist.</msg>
+<status status="PASS" starttime="20220925 05:31:30.763" endtime="20220925 05:31:30.770"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${inputFieldOtherTradingPlatform}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.869" level="INFO">Clicking element '//textarea[@name='other_trading_platforms']'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.868" endtime="20220923 16:33:20.909"/>
+<msg timestamp="20220925 05:31:30.771" level="INFO">Clicking element '//textarea[@name='other_trading_platforms']'.</msg>
+<status status="PASS" starttime="20220925 05:31:30.770" endtime="20220925 05:31:30.817"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${inputFieldOtherTradingPlatform}</arg>
-<arg>sdflsa;jldkjfa;lksdjf</arg>
+<arg>@sdflsa;jldkjfa;lksdjf1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:20.909" level="INFO">Typing text 'sdflsa;jldkjfa;lksdjf' into text field '//textarea[@name='other_trading_platforms']'.</msg>
-<status status="PASS" starttime="20220923 16:33:20.909" endtime="20220923 16:33:21.045"/>
+<msg timestamp="20220925 05:31:30.819" level="INFO">Typing text '@sdflsa;jldkjfa;lksdjf1234' into text field '//textarea[@name='other_trading_platforms']'.</msg>
+<status status="PASS" starttime="20220925 05:31:30.819" endtime="20220925 05:31:31.020"/>
 </kw>
 <kw name="Element Should Be Disabled" library="SeleniumLibrary">
 <arg>${continueButton}</arg>
 <doc>Verifies that element identified by ``locator`` is disabled.</doc>
-<status status="PASS" starttime="20220923 16:33:21.045" endtime="20220923 16:33:21.059"/>
+<status status="PASS" starttime="20220925 05:31:31.020" endtime="20220925 05:31:31.037"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${inputError}</arg>
+<arg>${closingAccountError}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220923 16:33:21.073" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
-<status status="PASS" starttime="20220923 16:33:21.059" endtime="20220923 16:33:21.073"/>
+<msg timestamp="20220925 05:31:31.076" level="INFO">Element '//p[@class='dc-text closing-account-reasons__error']' is displayed.</msg>
+<status status="PASS" starttime="20220925 05:31:31.037" endtime="20220925 05:31:31.076"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${inputFieldOtherTradingPlatform}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:21.073" level="INFO">Clicking element '//textarea[@name='other_trading_platforms']'.</msg>
-<status status="PASS" starttime="20220923 16:33:21.073" endtime="20220923 16:33:21.094"/>
+<msg timestamp="20220925 05:31:31.076" level="INFO">Clicking element '//textarea[@name='other_trading_platforms']'.</msg>
+<status status="PASS" starttime="20220925 05:31:31.076" endtime="20220925 05:31:31.117"/>
 </kw>
 <kw name="Clear Input Field">
 <arg>${inputFieldOtherTradingPlatform}</arg>
@@ -747,50 +747,50 @@
 <arg>${inputField}</arg>
 <arg>CTRL+a+BACKSPACE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220923 16:33:21.097" level="INFO">Sending key(s) ('CTRL+a+BACKSPACE',) to ["//textarea[@name='other_trading_platforms']"] element.</msg>
-<msg timestamp="20220923 16:33:21.372" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220923 16:33:21.372" level="INFO">Sending key a</msg>
-<msg timestamp="20220923 16:33:21.372" level="INFO">Pressing special key BACKSPACE down.</msg>
-<msg timestamp="20220923 16:33:21.372" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220923 16:33:21.372" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20220923 16:33:21.095" endtime="20220923 16:33:21.386"/>
+<msg timestamp="20220925 05:31:31.118" level="INFO">Sending key(s) ('CTRL+a+BACKSPACE',) to ["//textarea[@name='other_trading_platforms']"] element.</msg>
+<msg timestamp="20220925 05:31:31.415" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20220925 05:31:31.415" level="INFO">Sending key a</msg>
+<msg timestamp="20220925 05:31:31.416" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20220925 05:31:31.416" level="INFO">Releasing special key CONTROL.</msg>
+<msg timestamp="20220925 05:31:31.416" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20220925 05:31:31.117" endtime="20220925 05:31:31.452"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:21.094" endtime="20220923 16:33:21.386"/>
+<status status="PASS" starttime="20220925 05:31:31.117" endtime="20220925 05:31:31.452"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${inputFieldOtherTradingPlatform}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:21.387" level="INFO">Clicking element '//textarea[@name='other_trading_platforms']'.</msg>
-<status status="PASS" starttime="20220923 16:33:21.386" endtime="20220923 16:33:21.411"/>
+<msg timestamp="20220925 05:31:31.453" level="INFO">Clicking element '//textarea[@name='other_trading_platforms']'.</msg>
+<status status="PASS" starttime="20220925 05:31:31.453" endtime="20220925 05:31:31.526"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${inputFieldOtherTradingPlatform}</arg>
 <arg>There is some other platform have more features. There is some other platform have more features.</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:21.412" level="INFO">Typing text 'There is some other platform have more features. There is some other platform have more features.' into text field '//textarea[@name='other_trading_platforms']'.</msg>
-<status status="PASS" starttime="20220923 16:33:21.411" endtime="20220923 16:33:21.785"/>
+<msg timestamp="20220925 05:31:31.526" level="INFO">Typing text 'There is some other platform have more features. There is some other platform have more features.' into text field '//textarea[@name='other_trading_platforms']'.</msg>
+<status status="PASS" starttime="20220925 05:31:31.526" endtime="20220925 05:31:31.938"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${inputFieldDoToImprove}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:21.786" level="INFO">Clicking element '//textarea[@name='do_to_improve']'.</msg>
-<status status="PASS" starttime="20220923 16:33:21.786" endtime="20220923 16:33:21.825"/>
+<msg timestamp="20220925 05:31:31.939" level="INFO">Clicking element '//textarea[@name='do_to_improve']'.</msg>
+<status status="PASS" starttime="20220925 05:31:31.938" endtime="20220925 05:31:31.974"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${inputFieldDoToImprove}</arg>
 <arg>Usability can be improve maybe. Just a dummy sentence.</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:21.826" level="INFO">Typing text 'Usability can be improve maybe. Just a dummy sentence.' into text field '//textarea[@name='do_to_improve']'.</msg>
-<status status="PASS" starttime="20220923 16:33:21.825" endtime="20220923 16:33:21.940"/>
+<msg timestamp="20220925 05:31:31.975" level="INFO">Typing text 'Usability can be improve maybe. Just a dummy sentence.' into text field '//textarea[@name='do_to_improve']'.</msg>
+<status status="PASS" starttime="20220925 05:31:31.975" endtime="20220925 05:31:32.086"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:20.862" endtime="20220923 16:33:21.941"/>
+<status status="PASS" starttime="20220925 05:31:30.762" endtime="20220925 05:31:32.087"/>
 </test>
 <test id="s1-t10" name="Clear Text Input Field" line="148">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${inputFieldOtherTradingPlatform}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:21.942" level="INFO">Clicking element '//textarea[@name='other_trading_platforms']'.</msg>
-<status status="PASS" starttime="20220923 16:33:21.942" endtime="20220923 16:33:21.978"/>
+<msg timestamp="20220925 05:31:32.088" level="INFO">Clicking element '//textarea[@name='other_trading_platforms']'.</msg>
+<status status="PASS" starttime="20220925 05:31:32.087" endtime="20220925 05:31:32.116"/>
 </kw>
 <kw name="Clear Input Field">
 <arg>${inputFieldOtherTradingPlatform}</arg>
@@ -798,21 +798,21 @@
 <arg>${inputField}</arg>
 <arg>CTRL+a+BACKSPACE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220923 16:33:21.979" level="INFO">Sending key(s) ('CTRL+a+BACKSPACE',) to ["//textarea[@name='other_trading_platforms']"] element.</msg>
-<msg timestamp="20220923 16:33:22.247" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220923 16:33:22.247" level="INFO">Sending key a</msg>
-<msg timestamp="20220923 16:33:22.248" level="INFO">Pressing special key BACKSPACE down.</msg>
-<msg timestamp="20220923 16:33:22.248" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220923 16:33:22.248" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20220923 16:33:21.979" endtime="20220923 16:33:22.261"/>
+<msg timestamp="20220925 05:31:32.117" level="INFO">Sending key(s) ('CTRL+a+BACKSPACE',) to ["//textarea[@name='other_trading_platforms']"] element.</msg>
+<msg timestamp="20220925 05:31:32.386" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20220925 05:31:32.386" level="INFO">Sending key a</msg>
+<msg timestamp="20220925 05:31:32.386" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20220925 05:31:32.386" level="INFO">Releasing special key CONTROL.</msg>
+<msg timestamp="20220925 05:31:32.386" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20220925 05:31:32.117" endtime="20220925 05:31:32.435"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:21.979" endtime="20220923 16:33:22.261"/>
+<status status="PASS" starttime="20220925 05:31:32.117" endtime="20220925 05:31:32.436"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${inputFieldDoToImprove}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:22.262" level="INFO">Clicking element '//textarea[@name='do_to_improve']'.</msg>
-<status status="PASS" starttime="20220923 16:33:22.261" endtime="20220923 16:33:22.301"/>
+<msg timestamp="20220925 05:31:32.437" level="INFO">Clicking element '//textarea[@name='do_to_improve']'.</msg>
+<status status="PASS" starttime="20220925 05:31:32.436" endtime="20220925 05:31:32.482"/>
 </kw>
 <kw name="Clear Input Field">
 <arg>${inputFieldDoToImprove}</arg>
@@ -820,179 +820,71 @@
 <arg>${inputField}</arg>
 <arg>CTRL+a+BACKSPACE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220923 16:33:22.303" level="INFO">Sending key(s) ('CTRL+a+BACKSPACE',) to ["//textarea[@name='do_to_improve']"] element.</msg>
-<msg timestamp="20220923 16:33:22.582" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220923 16:33:22.582" level="INFO">Sending key a</msg>
-<msg timestamp="20220923 16:33:22.582" level="INFO">Pressing special key BACKSPACE down.</msg>
-<msg timestamp="20220923 16:33:22.582" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220923 16:33:22.582" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20220923 16:33:22.303" endtime="20220923 16:33:22.592"/>
+<msg timestamp="20220925 05:31:32.484" level="INFO">Sending key(s) ('CTRL+a+BACKSPACE',) to ["//textarea[@name='do_to_improve']"] element.</msg>
+<msg timestamp="20220925 05:31:32.752" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20220925 05:31:32.752" level="INFO">Sending key a</msg>
+<msg timestamp="20220925 05:31:32.752" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20220925 05:31:32.752" level="INFO">Releasing special key CONTROL.</msg>
+<msg timestamp="20220925 05:31:32.752" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20220925 05:31:32.483" endtime="20220925 05:31:32.778"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:22.302" endtime="20220923 16:33:22.592"/>
+<status status="PASS" starttime="20220925 05:31:32.483" endtime="20220925 05:31:32.779"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:21.941" endtime="20220923 16:33:22.592"/>
+<status status="PASS" starttime="20220925 05:31:32.087" endtime="20220925 05:31:32.779"/>
 </test>
 <test id="s1-t11" name="Typing Text In Input Field" line="154">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${inputFieldOtherTradingPlatform}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:22.593" level="INFO">Clicking element '//textarea[@name='other_trading_platforms']'.</msg>
-<status status="PASS" starttime="20220923 16:33:22.593" endtime="20220923 16:33:22.626"/>
+<msg timestamp="20220925 05:31:32.781" level="INFO">Clicking element '//textarea[@name='other_trading_platforms']'.</msg>
+<status status="PASS" starttime="20220925 05:31:32.781" endtime="20220925 05:31:32.837"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${inputFieldOtherTradingPlatform}</arg>
 <arg>XXXX platform have more features and is better. There is some other platform have more features.</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:22.627" level="INFO">Typing text 'XXXX platform have more features and is better. There is some other platform have more features.' into text field '//textarea[@name='other_trading_platforms']'.</msg>
-<status status="PASS" starttime="20220923 16:33:22.626" endtime="20220923 16:33:22.996"/>
+<msg timestamp="20220925 05:31:32.838" level="INFO">Typing text 'XXXX platform have more features and is better. There is some other platform have more features.' into text field '//textarea[@name='other_trading_platforms']'.</msg>
+<status status="PASS" starttime="20220925 05:31:32.838" endtime="20220925 05:31:33.167"/>
 </kw>
 <kw name="Element Should Not Contain" library="SeleniumLibrary">
 <arg>${inputFieldOtherTradingPlatform}</arg>
 <arg>If you don’t mind sharing, which other trading platforms do you use?</arg>
 <doc>Verifies that element ``locator`` does not contain text ``expected``.</doc>
-<msg timestamp="20220923 16:33:23.017" level="INFO">Element '//textarea[@name='other_trading_platforms']' does not contain text 'If you don’t mind sharing, which other trading platforms do you use?'.</msg>
-<status status="PASS" starttime="20220923 16:33:22.996" endtime="20220923 16:33:23.017"/>
+<msg timestamp="20220925 05:31:33.182" level="INFO">Element '//textarea[@name='other_trading_platforms']' does not contain text 'If you don’t mind sharing, which other trading platforms do you use?'.</msg>
+<status status="PASS" starttime="20220925 05:31:33.167" endtime="20220925 05:31:33.182"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${inputFieldDoToImprove}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:23.017" level="INFO">Clicking element '//textarea[@name='do_to_improve']'.</msg>
-<status status="PASS" starttime="20220923 16:33:23.017" endtime="20220923 16:33:23.041"/>
+<msg timestamp="20220925 05:31:33.183" level="INFO">Clicking element '//textarea[@name='do_to_improve']'.</msg>
+<status status="PASS" starttime="20220925 05:31:33.182" endtime="20220925 05:31:33.205"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${inputFieldDoToImprove}</arg>
 <arg>Usability can be improve maybe. Just a dummy sentence.</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:23.042" level="INFO">Typing text 'Usability can be improve maybe. Just a dummy sentence.' into text field '//textarea[@name='do_to_improve']'.</msg>
-<status status="PASS" starttime="20220923 16:33:23.042" endtime="20220923 16:33:23.150"/>
+<msg timestamp="20220925 05:31:33.205" level="INFO">Typing text 'Usability can be improve maybe. Just a dummy sentence.' into text field '//textarea[@name='do_to_improve']'.</msg>
+<status status="PASS" starttime="20220925 05:31:33.205" endtime="20220925 05:31:33.317"/>
 </kw>
 <kw name="Element Should Not Contain" library="SeleniumLibrary">
 <arg>${inputFieldDoToImprove}</arg>
 <arg>What could we do to improve?</arg>
 <doc>Verifies that element ``locator`` does not contain text ``expected``.</doc>
-<msg timestamp="20220923 16:33:23.168" level="INFO">Element '//textarea[@name='do_to_improve']' does not contain text 'What could we do to improve?'.</msg>
-<status status="PASS" starttime="20220923 16:33:23.150" endtime="20220923 16:33:23.168"/>
+<msg timestamp="20220925 05:31:33.332" level="INFO">Element '//textarea[@name='do_to_improve']' does not contain text 'What could we do to improve?'.</msg>
+<status status="PASS" starttime="20220925 05:31:33.317" endtime="20220925 05:31:33.332"/>
 </kw>
-<status status="PASS" starttime="20220923 16:33:22.593" endtime="20220923 16:33:23.168"/>
+<status status="PASS" starttime="20220925 05:31:32.780" endtime="20220925 05:31:33.332"/>
 </test>
-<test id="s1-t12" name="Continue To Close Account" line="163">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${continueButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:23.169" level="INFO">Clicking element '//div[@class='closing-account-reasons__footer']//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large']'.</msg>
-<status status="PASS" starttime="20220923 16:33:23.169" endtime="20220923 16:33:23.238"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${closeAccountPrompt}</arg>
-<arg>60</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:23.240" endtime="20220923 16:33:23.261"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${closeAccountPrompt}</arg>
-<arg>60</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:23.261" endtime="20220923 16:33:23.277"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${returnButton}</arg>
-<arg>60</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:23.277" endtime="20220923 16:33:23.551"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${closeAccountButton}</arg>
-<arg>60</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:23.551" endtime="20220923 16:33:23.611"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${returnButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:23.611" level="INFO">Clicking element '//div[@class='dc-modal']//button[@class='dc-btn dc-btn__effect dc-btn--secondary dc-btn__large']'.</msg>
-<status status="PASS" starttime="20220923 16:33:23.611" endtime="20220923 16:33:23.665"/>
-</kw>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>${pageContentOverlay}</arg>
-<arg>60</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220923 16:33:23.665" endtime="20220923 16:33:23.684"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${continueButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:23.684" level="INFO">Clicking element '//div[@class='closing-account-reasons__footer']//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large']'.</msg>
-<status status="PASS" starttime="20220923 16:33:23.684" endtime="20220923 16:33:24.006"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${closeAccountPrompt}</arg>
-<arg>60</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:24.006" endtime="20220923 16:33:24.014"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${closeAccountPrompt}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:24.015" endtime="20220923 16:33:24.057"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${returnButton}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:24.058" endtime="20220923 16:33:24.300"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${closeAccountButton}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:24.301" endtime="20220923 16:33:24.338"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${closeAccountButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 16:33:24.339" level="INFO">Clicking element '//div[@class='dc-modal']//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large']'.</msg>
-<status status="PASS" starttime="20220923 16:33:24.338" endtime="20220923 16:33:24.386"/>
-</kw>
-<status status="PASS" starttime="20220923 16:33:23.168" endtime="20220923 16:33:24.387"/>
-</test>
-<test id="s1-t13" name="Verify Close Account" line="180">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${closeAccountMessage}</arg>
-<arg>60</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220923 16:33:24.388" endtime="20220923 16:33:25.451"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${closeAccountMessage}</arg>
-<arg>60</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 16:33:25.451" endtime="20220923 16:33:25.466"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>20</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 16:33:45.467" level="INFO">Slept 20 seconds</msg>
-<status status="PASS" starttime="20220923 16:33:25.467" endtime="20220923 16:33:45.467"/>
-</kw>
-<status status="PASS" starttime="20220923 16:33:24.387" endtime="20220923 16:33:45.467"/>
-</test>
-<test id="s1-t14" name="Verify Final Location" line="185">
-<kw name="Location Should Be" library="SeleniumLibrary">
-<arg>${HomeURL}</arg>
-<doc>Verifies that the current URL is exactly ``url``.</doc>
-<msg timestamp="20220923 16:33:45.479" level="INFO">Current location is 'https://deriv.com/'.</msg>
-<status status="PASS" starttime="20220923 16:33:45.469" endtime="20220923 16:33:45.479"/>
-</kw>
-<status status="PASS" starttime="20220923 16:33:45.468" endtime="20220923 16:33:45.480"/>
-</test>
-<status status="PASS" starttime="20220923 16:32:52.270" endtime="20220923 16:33:45.481"/>
+<status status="PASS" starttime="20220925 05:31:16.250" endtime="20220925 05:31:33.333"/>
 </suite>
 <statistics>
 <total>
-<stat pass="14" fail="0" skip="0">All Tests</stat>
+<stat pass="11" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="14" fail="0" skip="0" id="s1" name="Secondproject">Secondproject</stat>
+<stat pass="11" fail="0" skip="0" id="s1" name="Secondproject">Secondproject</stat>
 </suite>
 </statistics>
 <errors>
