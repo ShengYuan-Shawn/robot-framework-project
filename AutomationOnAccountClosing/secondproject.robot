@@ -160,27 +160,27 @@ Typing Text In Input Field
     Input Text    ${inputFieldDoToImprove}    Usability can be improve maybe. Just a dummy sentence.
     Element Should Not Contain    ${inputFieldDoToImprove}    What could we do to improve?
 
-# Continue To Close Account
-#     Click Element    ${continueButton}
-#     Wait Until Page Contains Element    ${closeAccountPrompt}    60
-#     Wait Until Element Is Visible    ${closeAccountPrompt}    60
-#     Wait Until Element Is Visible    ${returnButton}    60
-#     Wait Until Element Is Visible    ${closeAccountButton}    60
+Continue To Close Account
+    Click Element    ${continueButton}
+    Wait Until Page Contains Element    ${closeAccountPrompt}    60
+    Wait Until Element Is Visible    ${closeAccountPrompt}    60
+    Wait Until Element Is Visible    ${returnButton}    60
+    Wait Until Element Is Visible    ${closeAccountButton}    60
 
-#     Click Element    ${returnButton}
-#     Wait Until Element Is Enabled    ${pageContentOverlay}    60
+    Click Element    ${returnButton}
+    Wait Until Element Is Enabled    ${pageContentOverlay}    60
 
-#     Click Element    ${continueButton}
-#     Wait Until Page Contains Element    ${closeAccountPrompt}    60
-#     Wait Until Element Is Visible    ${closeAccountPrompt}
-#     Wait Until Element Is Visible    ${returnButton}
-#     Wait Until Element Is Visible    ${closeAccountButton}
-#     Click Element    ${closeAccountButton}
+    Click Element    ${continueButton}
+    Wait Until Page Contains Element    ${closeAccountPrompt}    60
+    Wait Until Element Is Visible    ${closeAccountPrompt}
+    Wait Until Element Is Visible    ${returnButton}
+    Wait Until Element Is Visible    ${closeAccountButton}
+    Click Element    ${closeAccountButton}
 
-# Verify Close Account
-#     Wait Until Page Contains Element    ${closeAccountMessage}    60
-#     Wait Until Element Is Visible    ${closeAccountMessage}    60
-#     Sleep    20
+Verify Close Account
+    Wait Until Page Contains Element    ${closeAccountMessage}    60
+    Wait Until Element Is Visible    ${closeAccountMessage}    60
+    Sleep    20
 
-# Verify Final Location
-#     Location Should Be    ${HomeURL}
+Verify Final Location
+    Location Should Be    ${HomeURL}
